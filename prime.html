@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime</title>
     <script>
-        var a = parseInt(prompt("Enter Number"));
-        for (let index = 0; index < array.length; index++) {
-            const element = array[index];
-            
+        var n = parseInt(prompt("Enter Number"));
+        var flag=0;
+        var i=2;
+        while (i<=n/2) {
+            if (n%i==0) {
+                flag=1;
+            }
+            i++;
         }
-        while (condition) {
-            
+        if(flag==1){
+            alert("Number Is Not Prime")
+        }
+        else{
+            alert("Number Is Prime")
         }
     </script>
 </head>
