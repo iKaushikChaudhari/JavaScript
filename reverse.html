@@ -6,10 +6,16 @@
     <title>Reverse Number</title>
     <script>
         var n = parseInt(prompt("Enter Number"));
-
-        for (var i = 0; i < n ; n--) {
-            
+        var rev = 0; 
+        while (n != 0)
+        {
+            rev = rev * 10;
+        
+            rev= rev + n%10;
+        
+            n = n/10
         }
+        alert(rev)
     </script>
 </head>
 <body>
