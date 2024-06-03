@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+    <script>
+        function Calculate(){
+            //Document = to access anything in body  
+            var a =parseInt(document.getElementById("n1").value)
+            var b =parseInt(document.getElementById("n2").value)
+            document.getElementById('out1').innerHTML = "Addition is : "+(a+b)+"<br>Substraction is : "+(a-b)+"<br>Multiplication is : "+(a*b)+"<br>Division is : "+(a/b)
+        }
+
+    </script>
+</head>
+<body>
+    <label for="">Enter 1st Number</label>
+    <input type="number" id="n1"><br><br>
+    <label for="">Enter 2nd Number</label>
+    <input type="number" id="n2"><br><br>
+    <button onclick="Calculate()"> Calculate</button><br><br>
+    <p id="out1"></p><br>
+    
+</body>
+</html>
