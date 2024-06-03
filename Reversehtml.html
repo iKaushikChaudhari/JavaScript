@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reverse</title>
     <script>
         function Check(){
             //Document = to access anything in body  
             var n =parseInt(document.getElementById("n").value)
-            var flag=0;
-            for(var i=2; i<=Math.sqrt(n);i++)
+            var rev = 0; 
+            while (n != 0)
             {
-                if(n%i==0){
-                    flag=1
-                } 
+                rev = rev * 10
+                rev= rev + n%10
+                n = parseInt(n/10)
             }
-            if(flag==0){
-                document.getElementById('out1').innerHTML = "Number Is Prime "
-            }
-            else{
-                document.getElementById('out1').innerHTML = "Number Is Not Prime "
-            }
+            document.getElementById('out1').innerHTML = "Reverse Of Num Is : "+(rev)
         }
     </script>
 </head>
